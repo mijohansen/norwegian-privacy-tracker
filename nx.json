@@ -1,0 +1,41 @@
+{
+  "npmScope": "privacy-tracker",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test"]
+      }
+    }
+  },
+  "projects": {
+    "api-interfaces": {
+      "tags": []
+    },
+    "backend": {
+      "tags": []
+    },
+    "collector": {
+      "tags": []
+    },
+    "frontend": {
+      "tags": []
+    },
+    "scheduler": {
+      "tags": []
+    },
+    "storage": {
+      "tags": []
+    }
+  }
+}
